@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeeva Haridas</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/media_query.css">
+<style>
+
+.inputfield, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: aliceblue;
+  box-sizing: border-box;
+}
+
+.submit{
+  width: 100%;
+  background-color: var(--oxford-blue);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color:var(--oxford-blue);
+}
+.modal-toggle {
+  text-align: left;
+}
+</style>
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header class="">
+      <div class="navbar">
+
+        
+        <button class="navbar-menu-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+        
+    </header>
+    <!--
+      - MAIN SECTION
+    -->
+    <main> 
+     <!--
+        - #MOVIES SECTION
+      -->
+      <section class="movies">
+        <div class="filter-bar">
+
+          <div class="filter-dropdowns">
+            <select name="genre" id="rating" class="genre">
+              <option value="All">All Language</option>
+              <option value="Tamil">Tamil</option>
+              <option value="English">English</option>
+              <option value="Kannada">Kannada</option>
+              <option value="Malayalam">Malayalam</option>
+            </select>
+          </div>
+
+          <div class="filter-radios">
+            <input type="radio" name="grade" value="HL" class="radio" id="featured" checked>
+            <label for="featured"><ion-icon name="star-outline"></ion-icon>
+              <span>High-Low</span></label>
+
+            <input type="radio" name="grade" value="LH" class="radio" id="popular">
+            <label for="popular"><ion-icon name="star-outline"></ion-icon>
+              <span>Low-High</Low-High></span></label>
+
+            <div class="checked-radio-bg"></div>
+
+          </div>
+
+        </div>
+        <div id="MovieGrid" class="movies-grid testing">
+        </div>
+        <button class="load-more">ADD MOVIE</button>
+
+      </br>
+        <div class="modal-toggle">
+          <form onsubmit="return false" id="inputfrom" class="inputfrom" >
+            <label  for="fname">Movie Name</label>
+            <input type="text" class=" inputfield" id="name" name="name" required>
+            <label for="lname">IMG URL</label>
+            <input type="text" class=" inputfield" id="url" name="url" required>
+            <label for="lname">RATING</label>
+            <input type="number" min="0.0" max="10.0" class=" inputfield" id="rating" name="url" required><br>
+            <label for="lname">TAG</label>
+            <input type="text" class=" inputfield" id="tag" name="tag"required>
+            <label for="lname">Year</label>
+            <input type="number" class=" inputfield" id="year" name="year"required><br>
+            <input type="submit" class="submit" id="sumit" value="submit">
+          </form>
+        </div> 
+      </section>
+    </main>
+  </div>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
