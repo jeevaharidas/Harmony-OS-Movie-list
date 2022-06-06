@@ -10,3 +10,7 @@ It will do the below mentioned features:
 # * It filters movie based on the language 
 # * It sort out movie list based on rating
 # * Add a new movie to the page.
+
+
+
+![Sample-video](https://user-images.githubusercontent.com/62045390/172197078-b8e9a271-5202-4b03-b7a2-88efe96cf141.gif)
