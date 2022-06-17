@@ -59,7 +59,7 @@
             var Name = document.getElementById("name");
             Movie.push({"Name":Name.value,"url":filePath.value,"rating":rating.value,"year":year.value,"tag":tag.value});
             add(Name.value,filePath.value,rating.value,year.value,tag.value);
-            document.getElementById("inputfrom").reset();
+            document.getElementById("inputfrom").reset(); 
           });
 
 
@@ -68,13 +68,9 @@
             
             var filter = $(this).val(),
               count = 0;
-      
-            
+
             if(filter!="All"){
             $('.movies-grid .movie-card').each(function() {
-      
-      
-              
               if ($(this).text().search(new RegExp(filter, "i")) < 0) {
                 $(this).hide();  
       
@@ -87,8 +83,7 @@
             });}else{
 
               $('.movies-grid .movie-card').each(function() {
-                  $(this).show(); 
-              
+                  $(this).show();               
                 }
           )}
           });

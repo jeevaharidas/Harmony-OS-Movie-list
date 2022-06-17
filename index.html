@@ -8,8 +8,9 @@
   <title>Jeeva Haridas</title>
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/media_query.css">
-<style>
 
+
+<style>
 .inputfield, select {
   width: 100%;
   padding: 12px 20px;
@@ -38,21 +39,12 @@
   text-align: left;
 }
 </style>
+
   <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
 </head>
 <body>
   <div class="container">
-    <header class="">
-      <div class="navbar">
-
-        
-        <button class="navbar-menu-btn">
-          <span class="one"></span>
-          <span class="two"></span>
-          <span class="three"></span>
-        </button>
-        
-    </header>
+    
     <!--
       - MAIN SECTION
     -->
@@ -82,12 +74,13 @@
             <label for="popular"><ion-icon name="star-outline"></ion-icon>
               <span>Low-High</Low-High></span></label>
 
-            <div class="checked-radio-bg"></div>
+            
 
           </div>
 
         </div>
         <div id="MovieGrid" class="movies-grid testing">
+          
         </div>
         <button class="load-more">ADD MOVIE</button>
 
@@ -96,14 +89,19 @@
           <form onsubmit="return false" id="inputfrom" class="inputfrom" >
             <label  for="fname">Movie Name</label>
             <input type="text" class=" inputfield" id="name" name="name" required>
+
             <label for="lname">IMG URL</label>
             <input type="text" class=" inputfield" id="url" name="url" required>
+
             <label for="lname">RATING</label>
             <input type="number" min="0.0" max="10.0" class=" inputfield" id="rating" name="url" required><br>
+            
             <label for="lname">TAG</label>
             <input type="text" class=" inputfield" id="tag" name="tag"required>
+            
             <label for="lname">Year</label>
             <input type="number" class=" inputfield" id="year" name="year"required><br>
+            
             <input type="submit" class="submit" id="sumit" value="submit">
           </form>
         </div> 
@@ -118,6 +116,6 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="./assets/js/main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
